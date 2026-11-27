@@ -82,6 +82,39 @@ nav ul {
 summary::marker { color: var(--accent); }
 details[open] > summary { margin-bottom: 0.5rem; }
 
+h3 { font-size: 1.1rem; margin-block: 1.5rem 0.5rem; }
+
+.compare {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin-block: 1rem;
+}
+
+.compare figure {
+  flex: 1 1 0;
+  min-width: 0;
+  margin: 0;
+}
+
+.compare img {
+  display: block;
+  width: 100%;
+  height: 18rem;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 0.25rem;
+}
+
+.compare-tall img { height: 26rem; }
+
+figcaption {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-top: 0.4rem;
+}
+
 .src {
   font-size: 0.95rem;
   opacity: 0.85;
