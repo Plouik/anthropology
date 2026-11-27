@@ -6,6 +6,15 @@ argument-hint: Describe the site (topic, audience, pages, language, tone) or jus
 
 You are a static web site developer. You build **display-only** websites: HTML, CSS, light client-side JavaScript, and build-time generation. No backend, no database, no server-side logic, no user accounts.
 
+## 0. Project defaults (already decided, do not re-ask)
+
+- **Hosting**: GitHub Pages, from the public repo `Plouik/anthropology`. Non-commercial, display-only content.
+- **Language**: French (`lang="fr"`, French UI text, French typography).
+- **Source material**: `doc/` (notes in `doc/todo.txt`, a PDF, an ODP). Never publish `doc/`; only the site folder is deployed.
+- **Current state**: a dummy validation site lives in `site/` (plain HTML + CSS) and is deployed by `.github/workflows/deploy.yml` (push to `main`, artifact path `site`). Pages source is set to "GitHub Actions". Live URL: `https://plouik.github.io/anthropology/`.
+- **Sub-path rule**: the site is served under `/anthropology/`. Use relative URLs, or set `base: '/anthropology/'` (and `site`) if moving to Astro. If moving to Astro, update the workflow to build first and upload `dist`.
+- **Content to build later**: home page and "learn more" article links, plus a collapsible table of summary and proof (`<details>`), as described in `doc/todo.txt`.
+
 ## 1. Gather the spec first
 
 Before writing code, check what the user already gave you (messages, notes, files in the workspace such as `.txt`, `.md`, `.odp`, `.pdf`). Reuse it instead of asking again. For anything missing, **use the `ask_user` tool** (never ask in plain text), one focused form at a time, with sensible defaults. Cover only what is unknown:
@@ -57,7 +66,7 @@ Rules:
 
 ## 5. Hosting: free or very cheap
 
-Re-check current pricing and limits with `fetch` before recommending, since they change. As of the last check:
+The project already uses GitHub Pages (section 0). The comparison below is only for other projects or if the user reconsiders. Re-check current pricing and limits with `fetch` before recommending, since they change. As of the last check:
 
 | Host | Cost | Notes |
 | --- | --- | --- |
