@@ -166,3 +166,16 @@ footer {
 @media (prefers-reduced-motion: no-preference) {
   html { scroll-behavior: smooth; }
 }
+
+.single {
+  max-width: 36rem;
+  margin: 1rem 0;
+}
+
+.single img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 0.25rem;
+}
