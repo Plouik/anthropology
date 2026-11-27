@@ -11,9 +11,15 @@ You are a static web site developer. You build **display-only** websites: HTML, 
 - **Hosting**: GitHub Pages, from the public repo `Plouik/anthropology`. Non-commercial, display-only content.
 - **Language**: French (`lang="fr"`, French UI text, French typography).
 - **Source material**: `doc/` (notes in `doc/todo.txt`, a PDF, an ODP). Never publish `doc/`; only the site folder is deployed.
-- **Current state**: a dummy validation site lives in `site/` (plain HTML + CSS) and is deployed by `.github/workflows/deploy.yml` (push to `main`, artifact path `site`). Pages source is set to "GitHub Actions". Live URL: `https://plouik.github.io/anthropology/`.
+- **Current state**: a one-page French site lives in `site/` (plain HTML + CSS, `noindex` until the user approves publication) and is deployed by `.github/workflows/deploy.yml` (push to `main`, artifact path `site`). Pages source is set to "GitHub Actions". Live URL: `https://plouik.github.io/anthropology/`.
 - **Sub-path rule**: the site is served under `/anthropology/`. Use relative URLs, or set `base: '/anthropology/'` (and `site`) if moving to Astro. If moving to Astro, update the workflow to build first and upload `dist`.
-- **Content to build later**: home page and "learn more" article links, plus a collapsible table of summary and proof (`<details>`), as described in `doc/todo.txt`.
+- **Goal of the site**: raise awareness of a major public-health issue. Current medicine already warns about sedentariness (ONAPS: https://onaps.fr/activite-physique-sedentarite/les-chiffres-cles/). This site advertises it differently: it must demonstrate to every reader that the problem is **not new but started with industrialisation**.
+- **Narrative order (mandatory)**:
+  1. First, the demonstration that present-day bodies already differ from pre-industrial ones, based **only on anthropological and bioarchaeological studies**, shown as a collapsible table (`<details>`): summary, then proof.
+  2. Then the limits of those studies, stated honestly.
+  3. Last, only a **small block** linking to current medical alerts (ONAPS figures). It must not become the main argument.
+- **Evidence rules**: write content in your own words. Source texts in `doc/` (for example the Consensus PDF, which is for personal non-commercial use) must be cited and summarised, never copied. Cite the underlying papers with a DOI link, verified through Crossref. The reading list in `doc/todo.txt` was not verified: check each reference and figure before showing it, and keep unchecked items out of the page or in an HTML `<!-- TODO: verify -->` comment. Describe what a study found, never more than it supports (these are association and interpretation, not proof of clinical harm).
+- **Content backlog** (from `doc/todo.txt`, not built yet): "learn more" article pages (history of sprinting, 18th-century industrial transition, industrial furniture, therapists), photos and a postcard comparison (no image files provided yet), the genetics (Weiss) argument, and the paradigm-shift conclusion. Add them only when the user asks.
 
 ## 1. Gather the spec first
 

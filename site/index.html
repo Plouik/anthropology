@@ -3,38 +3,120 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Anthropologie — site de test</title>
-  <meta name="description" content="Page de test pour valider l'hébergement sur GitHub Pages.">
+  <title>Le corps d'avant l'industrie — la sédentarité n'est pas née avec les écrans</title>
+  <meta name="description" content="Les squelettes et l'anthropologie montrent que le corps humain a changé avec l'industrialisation. La sédentarité dont s'alarme la médecine aujourd'hui n'est pas nouvelle.">
   <meta name="robots" content="noindex">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Le corps d'avant l'industrie">
+  <meta property="og:description" content="La sédentarité n'est pas née avec les écrans : les squelettes montrent que nos corps ont changé avec l'industrialisation.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%238a3b12'/%3E%3Ccircle cx='16' cy='9' r='3' fill='%23fff'/%3E%3Crect x='14' y='14' width='4' height='3' rx='1' fill='%23fff'/%3E%3Crect x='14' y='18.5' width='4' height='3' rx='1' fill='%23fff'/%3E%3Crect x='14' y='23' width='4' height='3' rx='1' fill='%23fff'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
   <header>
-    <h1>Anthropologie — site de test</h1>
-    <p>Contenu fictif : cette page sert uniquement à valider l'hébergement sur GitHub Pages.</p>
+    <p class="kicker">Anthropologie et santé publique</p>
+    <h1>Le corps d'avant l'industrie</h1>
+    <p class="lead">La sédentarité n'est pas née avec les écrans. Les squelettes et l'anthropologie montrent que le corps humain a déjà changé avec l'industrialisation.</p>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#demonstration">La démonstration</a></li>
+        <li><a href="#limites">Les limites</a></li>
+        <li><a href="#medecine">La médecine aujourd'hui</a></li>
+        <li><a href="#references">Références</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <h2>Tableau déroulant : résumé et preuves</h2>
+  <main id="contenu">
+    <section id="demonstration" aria-labelledby="t-demo">
+      <h2 id="t-demo">La démonstration</h2>
+      <p>Quatre étapes, du plus général au plus précis. Cliquez sur un résumé pour afficher les preuves.</p>
 
-    <details>
-      <summary>1. Résumé fictif A</summary>
-      <p>Preuve A : texte d'exemple (<a href="https://example.org/">référence fictive</a>).</p>
-    </details>
+      <details>
+        <summary>1. Le corps se façonne selon le milieu matériel</summary>
+        <div class="evidence">
+          <p>Pour André-Georges Haudricourt, la technique est d'abord un système de mouvements du corps, appris et transmis, et conditionné par l'environnement matériel : sol, mobilier, outils. Là où l'on travaille au niveau du sol, les postures et les gestes ne sont pas ceux d'une personne assise sur une chaise devant une table haute.</p>
+          <p class="src">Sources : Haudricourt, <cite>La Technologie, science humaine</cite> (1987) et <cite>Des gestes aux techniques</cite> (2010) ; Sigaut, <cite>Comment Homo devint faber</cite> (2012).</p>
+        </div>
+      </details>
 
-    <details>
-      <summary>2. Résumé fictif B</summary>
-      <p>Preuve B : texte d'exemple.</p>
-    </details>
+      <details>
+        <summary>2. S'asseoir sur une chaise est une exception historique</summary>
+        <div class="evidence">
+          <p>L'anthropologue Gordon Hewes a recensé les postures habituelles de nombreuses cultures du monde : accroupi, assis au sol, jambes croisées ou allongées, debout. L'assise sur siège haut y apparaît comme une habitude minoritaire à l'échelle de l'histoire humaine. D'autres travaux retracent l'arrivée progressive de la chaise et du mobilier moderne dans les modes de vie occidentaux.</p>
+          <!-- TODO: verify — chiffres de Hewes (environ 100 postures, 480 cultures) tirés des notes de doc/todo.txt, à contrôler dans l'article original avant de les afficher -->
+          <p class="src">Sources : <a href="#ref-hewes">Hewes (1955)</a> ; Rybczynski, <cite>Now I Sit Me Down</cite> (2016) ; Giedion, <cite>La Mécanisation au pouvoir</cite> (1948) ; Cranz, <cite>The Chair</cite> (1998).</p>
+        </div>
+      </details>
 
-    <details>
-      <summary>3. Résumé fictif C</summary>
-      <p>Preuve C : texte d'exemple.</p>
-    </details>
+      <details>
+        <summary>3. La colonne vertébrale n'est plus la même qu'avant l'ère industrielle</summary>
+        <div class="evidence">
+          <p>C'est la preuve centrale : on compare directement des os.</p>
+          <ul>
+            <li>Des squelettes archéologiques préindustriels et des cadavres postindustriels diffèrent de façon significative par l'inclinaison des vertèbres (« coin vertébral ») et l'orientation de leurs facettes articulaires (<a href="#ref-williams">Williams et al., 2022</a>).</li>
+            <li>Des vertèbres lombaires (L4) de Polonais médiévaux (92 individus) comparées à des scanners de contemporains (100 individus) montrent un corps vertébral plus petit aujourd'hui, ce que les auteurs interprètent comme un amincissement lié à une moindre charge mécanique (<a href="#ref-gratkowska">Gratkowska et al., 2026</a>).</li>
+            <li>Des facettes osseuses d'accroupissement, laissées par la posture accroupie répétée, ont été décrites sur des squelettes anciens : la posture habituelle laisse une trace dans l'os (<a href="#ref-trinkaus">Trinkaus, 1975</a>).</li>
+          </ul>
+          <p>Les mécanismes avancés : moins d'activité, assise prolongée sur mobilier, disparition de l'accroupissement. Le squelette réagit surtout aux charges subies pendant la croissance et jusqu'au début de l'âge adulte.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>4. Ce changement vient du mode de vie, pas de la génétique</summary>
+        <div class="evidence">
+          <p>Dans l'étude de Williams et al., aucune différence significative n'apparaît selon la géographie parmi les échantillons préindustriels, ni selon l'ascendance parmi les postindustriels. Les auteurs y voient de la plasticité plutôt qu'un effet d'ascendance : le corps s'adapte à la manière dont on vit.</p>
+          <p class="src">Source : <a href="#ref-williams">Williams et al. (2022)</a>.</p>
+        </div>
+      </details>
+
+      <p class="conclusion"><strong>Ce que cela montre :</strong> les corps que la médecine moderne observe et soigne sont déjà différents de ceux d'avant l'industrialisation. Le problème de sédentarité n'est pas récent : il accompagne le mode de vie industriel depuis ses débuts.</p>
+    </section>
+
+    <section id="limites" aria-labelledby="t-limites">
+      <h2 id="t-limites">Ce que ces études ne disent pas</h2>
+      <ul>
+        <li>Les échantillons comparés (cadavres modernes et squelettes archéologiques) n'ont pas la même conservation ni la même composition, et le groupe préindustriel est petit.</li>
+        <li>Les différences entre populations peuvent être aussi grandes que celles dues au mode de vie (<a href="#ref-zlolniski">Zlolniski et al., 2019</a>).</li>
+        <li>Le lien entre ces différences de forme et les problèmes de santé reste une hypothèse.</li>
+      </ul>
+    </section>
+
+    <section id="medecine" class="callout" aria-labelledby="t-med">
+      <h2 id="t-med">Et la médecine aujourd'hui ?</h2>
+      <p>La médecine tire déjà la sonnette d'alarme. D'après l'<a href="https://onaps.fr/activite-physique-sedentarite/les-chiffres-cles/">Observatoire national de l'activité physique et de la sédentarité (ONAPS)</a> :</p>
+      <ul>
+        <li>les adultes passent en moyenne 12&nbsp;heures par jour assis les jours travaillés ;</li>
+        <li>73&nbsp;% des jeunes de 11 à 17 ans n'atteignent pas les recommandations d'activité physique ;</li>
+        <li>la sédentarité est associée à un risque 2,5&nbsp;fois plus élevé de maladie cardiovasculaire et 2&nbsp;fois plus élevé de diabète de type&nbsp;2.</li>
+      </ul>
+      <p>Ce que montrent les squelettes : ce constat s'inscrit dans une histoire bien plus longue que celle des écrans.</p>
+    </section>
+
+    <section id="references" aria-labelledby="t-refs">
+      <h2 id="t-refs">Références</h2>
+      <ul class="refs">
+        <li id="ref-williams">Williams, S. A., et al. (2022). Inferring lumbar lordosis in Neandertals and other hominins. <cite>PNAS Nexus</cite>, 1, pgab005. <a href="https://doi.org/10.1093/pnasnexus/pgab005">doi:10.1093/pnasnexus/pgab005</a></li>
+        <li id="ref-gratkowska">Gratkowska, M., Krenz-Niedbała, M., &amp; Koszewicz, M. (2026). Geometric variability of the lumbar spine from medieval to modern times. <cite>Anthropologiai Közlemények</cite>. <a href="https://doi.org/10.20330/anthropkozl.2026.67s.57">doi:10.20330/anthropkozl.2026.67s.57</a></li>
+        <li id="ref-zlolniski">Zlolniski, S. L., et al. (2019). 3D geometric morphometric analysis of variation in the human lumbar spine. <cite>American Journal of Physical Anthropology</cite>, 170, 361-372. <a href="https://doi.org/10.1002/ajpa.23918">doi:10.1002/ajpa.23918</a></li>
+        <li id="ref-hewes">Hewes, G. W. (1955). World distribution of certain postural habits. <cite>American Anthropologist</cite>, 57(2). <a href="https://doi.org/10.1525/aa.1955.57.2.02a00040">doi:10.1525/aa.1955.57.2.02a00040</a></li>
+        <li id="ref-trinkaus">Trinkaus, E. (1975). Squatting among the Neandertals: a problem in the behavioral interpretation of skeletal morphology. <cite>Journal of Archaeological Science</cite>, 2. <a href="https://doi.org/10.1016/0305-4403(75)90005-9">doi:10.1016/0305-4403(75)90005-9</a></li>
+        <li>Haudricourt, A.-G. (1987). <cite>La Technologie, science humaine</cite>.</li>
+        <li>Haudricourt, A.-G. (2010). <cite>Des gestes aux techniques</cite>.</li>
+        <li>Sigaut, F. (2012). <cite>Comment Homo devint faber</cite>.</li>
+        <li>Rybczynski, W. (2016). <cite>Now I Sit Me Down: From Klismos to Plastic Chair</cite>.</li>
+        <li>Giedion, S. (1948). <cite>Mechanization Takes Command</cite> (trad. fr. <cite>La Mécanisation au pouvoir</cite>).</li>
+        <li>Cranz, G. (1998). <cite>The Chair: Rethinking Culture, Body, and Design</cite>.</li>
+        <li>ONAPS. <a href="https://onaps.fr/activite-physique-sedentarite/les-chiffres-cles/">L'activité physique et la sédentarité en France : les chiffres clés</a>.</li>
+      </ul>
+    </section>
   </main>
 
   <footer>
-    <p>Aucun cookie, aucun traceur.</p>
+    <p>Site d'information, sans cookie ni traceur.</p>
   </footer>
 </body>
 </html>
