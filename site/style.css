@@ -18,7 +18,7 @@
 body {
   margin: 0 auto;
   padding: 1rem;
-  max-width: 42rem;
+  max-width: 60rem;
   background: var(--bg);
   color: var(--fg);
   font: 1.125rem/1.6 system-ui, sans-serif;
@@ -84,15 +84,23 @@ details[open] > summary { margin-bottom: 0.5rem; }
 
 h3 { font-size: 1.1rem; margin-block: 1.5rem 0.5rem; }
 
+/* Lignes de texte lisibles sur grand écran, images pleine largeur */
+.lead, details p, details ul, .conclusion, .callout p, .callout ul, #limites ul {
+  max-width: 46rem;
+}
+
 .compare {
-  display: flex;
-  gap: 0.75rem;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
   margin-block: 1rem;
 }
 
+@media (min-width: 40rem) {
+  .compare { grid-template-columns: 1fr 1fr; align-items: start; }
+}
+
 .compare figure {
-  flex: 1 1 0;
   min-width: 0;
   margin: 0;
 }
@@ -100,14 +108,19 @@ h3 { font-size: 1.1rem; margin-block: 1.5rem 0.5rem; }
 .compare img {
   display: block;
   width: 100%;
-  height: 18rem;
+  height: 20rem;
   object-fit: contain;
   background: #fff;
   border: 1px solid var(--border);
   border-radius: 0.25rem;
 }
 
-.compare-tall img { height: 26rem; }
+.compare-tall img { height: 28rem; }
+
+@media (min-width: 60rem) {
+  .compare img { height: 24rem; }
+  .compare-tall img { height: 34rem; }
+}
 
 figcaption {
   font-size: 0.9rem;
